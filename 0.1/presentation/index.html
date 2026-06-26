@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://cloud-pool-managers.github.io/docs/0.1/10-observabilite/">
+        <link rel="canonical" href="https://cloud-pool-managers.github.io/docs/0.1/presentation/">
       
       
-        <link rel="prev" href="../09-developpement-exploitation/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../11-moodle/">
+        <link rel="next" href="../01-architecture/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Observabilité - Cloud Pool Manager — Docs</title>
+        <title>Présentation - Cloud Pool Manager — Docs</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#observabilite-metriques-logs-usage" class="md-skip">
+        <a href="#cloudpoolmanager-presentation" class="md-skip">
           Aller au contenu
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Observabilité
+              Présentation
             
           </span>
         </div>
@@ -288,10 +288,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../presentation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Présentation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -307,6 +334,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ce-que-ca-fait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que ça fait
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-besoin-vis-a-vis-de-moodle-de-la-base-de-synchro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le besoin vis-à-vis de Moodle / de la base de synchro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture (résumé)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -558,37 +638,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Observabilité
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../10-observabilite/" class="md-nav__link">
         
   
   
@@ -604,103 +657,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vue-densemble" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vue d'ensemble
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-les-metriques-exposees-par-le-control-center" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Les métriques exposées par le Control Center
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-les-logs-loki-promtail" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Les logs (Loki + Promtail)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-donnees-metier-datasource-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Données métier (datasource PostgreSQL)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-le-dashboard-fourni" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Le dashboard fourni
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-topologie-de-deploiement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Topologie de déploiement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-securite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Sécurité
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -759,10 +715,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble" class="md-nav__link">
+  <a href="#ce-que-ca-fait" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vue d'ensemble
+        Ce que ça fait
       
     </span>
   </a>
@@ -770,10 +726,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-les-metriques-exposees-par-le-control-center" class="md-nav__link">
+  <a href="#le-besoin-vis-a-vis-de-moodle-de-la-base-de-synchro" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Les métriques exposées par le Control Center
+        Le besoin vis-à-vis de Moodle / de la base de synchro
       
     </span>
   </a>
@@ -781,54 +737,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-les-logs-loki-promtail" class="md-nav__link">
+  <a href="#architecture-resume" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Les logs (Loki + Promtail)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-donnees-metier-datasource-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Données métier (datasource PostgreSQL)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-le-dashboard-fourni" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Le dashboard fourni
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-topologie-de-deploiement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Topologie de déploiement
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-securite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Sécurité
+        Architecture (résumé)
       
     </span>
   </a>
@@ -852,176 +764,37 @@
 
 
 
-<h1 id="observabilite-metriques-logs-usage">Observabilité — métriques, logs, usage<a class="headerlink" href="#observabilite-metriques-logs-usage" title="Permanent link">&para;</a></h1>
-<p>Stack de supervision pour suivre l'<strong>usage</strong> de la plateforme (heures de pointe, nombre de VMs
-actives, connexions, occupation des pools) et <strong>centraliser les logs</strong> des services. Trois
-briques open-source :</p>
-<table>
-<thead>
-<tr>
-<th>Brique</th>
-<th>Rôle</th>
-<th>Port</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Prometheus</strong></td>
-<td>Collecte et historise les <strong>métriques</strong> (séries temporelles)</td>
-<td>9090</td>
-</tr>
-<tr>
-<td><strong>Loki</strong></td>
-<td>Stocke et indexe les <strong>logs</strong></td>
-<td>3100</td>
-</tr>
-<tr>
-<td><strong>Grafana</strong></td>
-<td><strong>Visualisation</strong> (dashboards) + requêtes ad-hoc PostgreSQL</td>
-<td>3000</td>
-</tr>
-<tr>
-<td><strong>Promtail</strong></td>
-<td>Agent qui <strong>pousse les logs</strong> des services vers Loki</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<p>Tout est défini dans <code>monitoring/</code> (déploiement : <code>monitoring/README.md</code>).</p>
-<h2 id="vue-densemble">Vue d'ensemble<a class="headerlink" href="#vue-densemble" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph stack["Stack observabilité (docker compose)"]
-        P["Prometheus :9090\nrétention 90 j"]
-        L["Loki :3100"]
-        G["Grafana :3000\ndashboards"]
-        PT["Promtail"]
-    end
-    CC["Control Center\nGET /metrics"]
-    PG[("PostgreSQL\ncontrol_center")]
-    LOGS["Logs services\n.devlogs/*.log"]
-
-    P --&gt;|scrape 30 s| CC
-    PT --&gt;|tail| LOGS
-    PT --&gt;|push| L
-    G --&gt; P
-    G --&gt; L
-    G --&gt;|SQL lecture seule| PG
-    CC --&gt;|interroge| PG
-
-    classDef ds fill:#eef;
-    class P,L,G,PT ds;</code></pre>
-<h2 id="1-les-metriques-exposees-par-le-control-center">1. Les métriques exposées par le Control Center<a class="headerlink" href="#1-les-metriques-exposees-par-le-control-center" title="Permanent link">&para;</a></h2>
-<p>Le Control Center expose un endpoint <strong><code>GET /metrics</code></strong> (port <code>50055</code>, format Prometheus). Un
-<em>collector</em> custom (<code>control_center/grpc/metrics.go</code>) interroge PostgreSQL <strong>à chaque scrape</strong>
-et publie :</p>
-<table>
-<thead>
-<tr>
-<th>Métrique</th>
-<th>Type</th>
-<th>Signification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cpm_pools_total</code></td>
-<td>gauge</td>
-<td>Nombre de serverpools</td>
-</tr>
-<tr>
-<td><code>cpm_servers{status}</code></td>
-<td>gauge</td>
-<td>VMs par statut (<code>ACTIVE</code>, <code>SHUTOFF</code>, <code>BUILD</code>…)</td>
-</tr>
-<tr>
-<td><code>cpm_vms_active</code></td>
-<td>gauge</td>
-<td>VMs avec un étudiant connecté</td>
-</tr>
-<tr>
-<td><code>cpm_students_total</code></td>
-<td>gauge</td>
-<td>Étudiants enregistrés</td>
-</tr>
-<tr>
-<td><code>cpm_github_sessions_24h</code></td>
-<td>gauge</td>
-<td>Connexions GitHub sur 24 h glissantes</td>
-</tr>
-<tr>
-<td><code>cpm_pool_students{pool,owner}</code></td>
-<td>gauge</td>
-<td>Étudiants par pool</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>Le collector lit la base à la volée : pas de cache, pas de tâche de fond. Prometheus
-historise ensuite ces valeurs (1 point / 30 s) → on obtient les <strong>courbes dans le temps</strong>
-(ex. pic de VMs actives en milieu de TP).</p>
-</blockquote>
-<pre class="mermaid"><code>sequenceDiagram
-    participant Prom as Prometheus
-    participant CC as Control Center /metrics
-    participant PG as PostgreSQL
-    loop toutes les 30 s
-        Prom-&gt;&gt;CC: GET /metrics
-        CC-&gt;&gt;PG: SELECT count(...) (pools, servers, sessions…)
-        PG--&gt;&gt;CC: chiffres
-        CC--&gt;&gt;Prom: cpm_* {labels} valeur
-    end</code></pre>
-<p>Routage : <code>/metrics</code> est servi par le mux REST (pas par gRPC-Web). En prod, il est exposé via
-Caddy (<code>handle /metrics { reverse_proxy localhost:50055 }</code>).</p>
-<h2 id="2-les-logs-loki-promtail">2. Les logs (Loki + Promtail)<a class="headerlink" href="#2-les-logs-loki-promtail" title="Permanent link">&para;</a></h2>
-<p>Promtail tourne sur la machine qui héberge les services, lit <code>.devlogs/*.log</code>
-(<code>backend.log</code>, <code>control.log</code>, <code>caddy.log</code>, <code>frontend.log</code>, <code>guac.log</code>) et les pousse vers
-Loki avec le label <code>job="cloudpoolmanager"</code>. Dans Grafana → <strong>Explore</strong> → datasource <strong>Loki</strong> :</p>
-<div class="highlight"><pre><span></span><code>{job=&quot;cloudpoolmanager&quot;} |= &quot;error&quot;
-{job=&quot;cloudpoolmanager&quot;, filename=&quot;/logs/backend.log&quot;}
-</code></pre></div>
-<h2 id="3-donnees-metier-datasource-postgresql">3. Données métier (datasource PostgreSQL)<a class="headerlink" href="#3-donnees-metier-datasource-postgresql" title="Permanent link">&para;</a></h2>
-<p>Grafana dispose d'une datasource <strong>PostgreSQL en lecture seule</strong> (<code>grafana_ro</code>) pour les
-requêtes SQL directes que les métriques ne couvrent pas (détail par étudiant, historique
-d'attribution…). En prod, créer l'utilisateur avec <code>monitoring/grafana_ro_user.sql</code>.</p>
-<h2 id="4-le-dashboard-fourni">4. Le dashboard fourni<a class="headerlink" href="#4-le-dashboard-fourni" title="Permanent link">&para;</a></h2>
-<p><code>monitoring/grafana/provisioning/dashboards/cpm-usage.json</code> — <strong>« CloudPoolManager — Usage »</strong>,
-provisionné automatiquement :</p>
+<h1 id="cloudpoolmanager-presentation">CloudPoolManager — présentation<a class="headerlink" href="#cloudpoolmanager-presentation" title="Permanent link">&para;</a></h1>
+<p>CloudPoolManager permet à un <strong>enseignant</strong> de provisionner automatiquement, en quelques clics,
+des <strong>machines virtuelles de TP</strong> (sur l'infrastructure OpenStack de l'X) et de les <strong>attribuer
+à ses étudiants</strong>, avec un environnement <strong>JupyterLab</strong> prêt à l'emploi et la <strong>correction
+automatisée</strong> des rendus (nbgrader).</p>
+<h2 id="ce-que-ca-fait">Ce que ça fait<a class="headerlink" href="#ce-que-ca-fait" title="Permanent link">&para;</a></h2>
 <ul>
-<li>compteurs : pools, VMs actives, étudiants, connexions GitHub 24 h ;</li>
-<li>courbe <strong>VMs actives dans le temps</strong> (→ heures de pointe) ;</li>
-<li>VMs <strong>par statut</strong> (empilées) ;</li>
-<li><strong>étudiants par pool</strong> (barres).</li>
+<li><strong>Pools de VMs par cours</strong> : l'enseignant crée un « pool » (image, taille, nombre de machines) ;
+  les VMs sont provisionnées et maintenues automatiquement.</li>
+<li><strong>Accès étudiant simple</strong> : l'étudiant se connecte (GitHub, ou compte Moodle/établissement),
+  rejoint son cours et obtient une VM avec <strong>JupyterLab</strong> dans le navigateur + un <strong>terminal web</strong>
+  (Guacamole). Aucune installation locale.</li>
+<li><strong>Notation (nbgrader)</strong> : distribution des sujets, collecte des copies, <strong>notation automatique</strong>,
+  correction manuelle, export CSV des notes.</li>
+<li><strong>Suivi temps réel</strong> : l'enseignant voit qui est connecté sur quelle machine.</li>
 </ul>
-<h2 id="5-topologie-de-deploiement">5. Topologie de déploiement<a class="headerlink" href="#5-topologie-de-deploiement" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart TB
-    subgraph dev["DEV — machine de développement"]
-        direction LR
-        ccd["Control Center :50055"]
-        pgd[("PG localhost")]
-        stackd["Stack (Colima)\nhost.docker.internal"]
-        stackd -.scrape/SQL.-&gt; ccd
-        stackd -.-&gt; pgd
-    end
-    subgraph prod["PROD — futur"]
-        ccp["Control Center\n(hôte joignable)"]
-        vminfra["VM infra (vmpoolmanager)\nstack docker compose"]
-        vminfra --&gt;|scrape via Caddy :443| ccp
-    end</code></pre>
-<blockquote>
-<p><strong>Contrainte réseau (constatée).</strong> Une VM du projet OpenStack <code>vmpoolmanager</code> <strong>ne route pas</strong>
-la machine de dev (NAT/VPN) ni l'hôte PostgreSQL — scrape et SQL en timeout. La stack doit
-donc tourner <strong>là où elle atteint le Control Center et PG</strong> : sur la machine de dev en
-développement, sur une VM infra seulement quand le Control Center prod est joignable depuis
-ce projet. Détails et commandes : <code>monitoring/README.md</code>.</p>
-</blockquote>
-<h2 id="6-securite">6. Sécurité<a class="headerlink" href="#6-securite" title="Permanent link">&para;</a></h2>
+<h2 id="le-besoin-vis-a-vis-de-moodle-de-la-base-de-synchro">Le besoin vis-à-vis de Moodle / de la base de synchro<a class="headerlink" href="#le-besoin-vis-a-vis-de-moodle-de-la-base-de-synchro" title="Permanent link">&para;</a></h2>
+<p>L'objectif est d'<strong>éviter la double saisie</strong> : récupérer la <strong>liste des étudiants</strong> d'un cours pour
+les inscrire automatiquement aux VMs, et proposer la connexion via leur compte établissement.</p>
+<p><strong>Accès souhaité : LECTURE SEULE.</strong> Données nécessaires, limitées aux cours de l'<strong>X</strong> :</p>
 <ul>
-<li>Datasource PostgreSQL <strong>SELECT-only</strong> (<code>grafana_ro</code>) en prod.</li>
-<li>Secrets (mots de passe Grafana/PG) dans <code>monitoring/.env</code> — <strong>gitignoré</strong> ; le dépôt ne
-  contient que <code>.env.example</code>.</li>
-<li><code>/metrics</code> n'expose que des compteurs d'usage agrégés (pas de données personnelles).</li>
-<li>Changer <code>GF_ADMIN_PASSWORD</code> ; idéalement Grafana derrière un proxy authentifié.</li>
+<li>la <strong>liste des cours</strong> ;</li>
+<li>les <strong>inscriptions</strong> à ces cours (enseignants + élèves) : identité minimale (<strong>nom, email/login</strong>) ;</li>
+<li>(optionnel) les <strong>groupes</strong> et inscriptions aux groupes.</li>
 </ul>
+<p>Aucune écriture n'est requise. <em>(La remontée des notes vers Moodle existe mais reste optionnelle et
+nécessiterait un accès en écriture ; à défaut, l'enseignant exporte un CSV et l'importe lui-même.)</em></p>
+<h2 id="architecture-resume">Architecture (résumé)<a class="headerlink" href="#architecture-resume" title="Permanent link">&para;</a></h2>
+<p>Frontend web (SvelteKit) → Control Center (Go) → Microservice OpenStack (Go) → VMs.
+Identité par OIDC (SSO), GitHub, ou Moodle. Code et documentation détaillée disponibles
+(dossier <code>doc/</code>).</p>
 
 
 
