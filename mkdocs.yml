@@ -1,0 +1,55 @@
+site_name: Cloud Pool Manager — Docs
+site_description: Pools de machines virtuelles pour l'enseignement — provisionnement OpenStack, JupyterLab & VS Code dans le navigateur, notation nbgrader, intégration Moodle.
+site_url: https://cloud-pool-managers.github.io/docs/
+repo_url: https://github.com/cloud-pool-managers/vm-pool-managers
+repo_name: cloud-pool-managers/vm-pool-managers
+edit_uri: ""
+
+theme:
+  name: material
+  language: fr
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle: { icon: material/weather-night, name: Mode sombre }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle: { icon: material/weather-sunny, name: Mode clair }
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - toc: { permalink: true }
+
+extra:
+  version: { provider: mike, default: latest }
+
+nav:
+  - Accueil: index.md
+  - Architecture: 01-architecture.md
+  - Authentification: 02-authentification.md
+  - Création des pools: 03-creation-pools.md
+  - Provisionnement & réconciliation: 04-provisionnement-reconciliation.md
+  - Attribution des VMs: 05-attribution-etudiants.md
+  - Accès aux VMs: 06-acces-vm.md
+  - Notation (nbgrader): 07-nbgrader-notation.md
+  - Snapshots & images: 08-snapshots-images.md
+  - Développement & exploitation: 09-developpement-exploitation.md
+  - Observabilité: 10-observabilite.md
+  - Moodle: 11-moodle.md

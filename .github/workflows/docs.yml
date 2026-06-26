@@ -1,0 +1,24 @@
+name: docs
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # mike publie la doc versionnée sur la branche gh-pages, servie par GitHub Pages
+      # à https://cloud-pool-managers.github.io/docs/.
+      - run: |
+          git fetch origin gh-pages --depth=1 || true
+          mike deploy --push --update-aliases 0.1 latest
+          mike set-default --push latest
