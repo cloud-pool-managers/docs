@@ -42,6 +42,7 @@ extra:
 
 nav:
   - Accueil: index.md
+  - Présentation: presentation.md
   - Architecture: 01-architecture.md
   - Authentification: 02-authentification.md
   - Création des pools: 03-creation-pools.md
