@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -976,8 +976,8 @@ Caddy (<code>handle /metrics { reverse_proxy localhost:50055 }</code>).</p>
 <p>Promtail tourne sur la machine qui héberge les services, lit <code>.devlogs/*.log</code>
 (<code>backend.log</code>, <code>control.log</code>, <code>caddy.log</code>, <code>frontend.log</code>, <code>guac.log</code>) et les pousse vers
 Loki avec le label <code>job="cloudpoolmanager"</code>. Dans Grafana → <strong>Explore</strong> → datasource <strong>Loki</strong> :</p>
-<div class="highlight"><pre><span></span><code>{job=&quot;cloudpoolmanager&quot;} |= &quot;error&quot;
-{job=&quot;cloudpoolmanager&quot;, filename=&quot;/logs/backend.log&quot;}
+<div class="highlight"><pre><span></span><code>{job="cloudpoolmanager"} |= "error"
+{job="cloudpoolmanager", filename="/logs/backend.log"}
 </code></pre></div>
 <h2 id="3-donnees-metier-datasource-postgresql">3. Données métier (datasource PostgreSQL)<a class="headerlink" href="#3-donnees-metier-datasource-postgresql" title="Permanent link">&para;</a></h2>
 <p>Grafana dispose d'une datasource <strong>PostgreSQL en lecture seule</strong> (<code>grafana_ro</code>) pour les
@@ -1080,7 +1080,7 @@ ce projet. Détails et commandes : <code>monitoring/README.md</code>.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
