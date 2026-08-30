@@ -3,8 +3,11 @@ on:
   push: { branches: [main] }
   pull_request:
   workflow_dispatch:
+# The build needs nothing beyond the source. Write access to the repository
+# is granted to the deploy job alone, below, so a pull request build cannot
+# push to gh-pages.
 permissions:
-  contents: write
+  contents: read
 jobs:
   # Build on every pull request as well as on main, so a change to the docs
   # or to the toolchain in requirements.txt has to prove it still builds
@@ -43,6 +46,8 @@ jobs:
       group: gh-pages-deploy
       cancel-in-progress: false
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
